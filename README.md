@@ -1,32 +1,37 @@
-        # CoinGlass Reverse Client
+# CoinGlass Reverse Client
 
-        Python client for endpoints used by [https://www.coinglass.com](https://www.coinglass.com). The implementation is browser/reverse-engineered and mirrors the internal clients used in local DEX modules.
+Python client for endpoints used by [https://www.coinglass.com](https://www.coinglass.com). The implementation is browser/reverse-engineered and mirrors the internal clients used in local DEX modules.
 
-        ## Install
+## Educational Use
 
-        ```bash
-        pip install git+https://github.com/bigidulka/dex-client-coinglass.git
-        ```
+This project is published as part of an educational process for studying web/API clients and data access patterns. It is unofficial, not affiliated with or endorsed by the upstream service, and should be used responsibly according to the target site's terms and applicable law.
 
-        For local development:
 
-        ```bash
-        pip install -e '.[dev]'
-        pytest
-        ```
+## Install
 
-        ## Quick start
+```bash
+pip install git+https://github.com/bigidulka/dex-client-coinglass.git
+```
 
-        ```python
-        from dex_client_coinglass import CoinGlassClient
+For local development:
 
-        client = CoinGlassClient()
-        # call any method below; all methods return decoded JSON dict/list payloads
-        ```
+```bash
+pip install -e '.[dev]'
+pytest
+```
 
-        ## Methods
+## Quick start
 
-        - `search`
+```python
+from dex_client_coinglass import CoinGlassClient
+
+client = CoinGlassClient()
+# call any method below; all methods return decoded JSON dict/list payloads
+```
+
+## Methods
+
+- `search`
 - `info`
 - `profile`
 - `related`
@@ -56,11 +61,11 @@
 - `futures_home_statistics`
 - `ip_country`
 
-        ## Endpoint inventory
+## Endpoint inventory
 
-        Extracted from existing Local clients and rechecked with browser-harness network capture where the site allowed capture.
+Extracted from existing Local clients and rechecked with browser-harness network capture where the site allowed capture.
 
-        - `['GET', '/api/coin/search', 'search']`
+- `['GET', '/api/coin/search', 'search']`
 - `['GET', '/api/coin/v2/info', 'info']`
 - `['GET', '/api/coin/profile', 'profile']`
 - `['GET', '/api/coin/related', 'related']`
@@ -88,11 +93,11 @@
 - `['GET', '/api/coin/tickers', 'coin tickers']`
 - `['GET', '/api/coin/market', 'coin market']`
 
-        Full details: [`endpoint_inventory.json`](endpoint_inventory.json).
+Full details: [`endpoint_inventory.json`](endpoint_inventory.json).
 
-        ## Notes
+## Notes
 
-        - No official SDK is used.
-        - Some endpoints require Cloudflare/browser behavior; pass `use_curl_cffi=True` where available.
-        - Auth/session-only methods need your own cookies/tokens. Do not commit secrets.
-        - These clients are thin transport wrappers; normalize data in your application layer.
+- No official SDK is used.
+- Some endpoints require Cloudflare/browser behavior; pass `use_curl_cffi=True` where available.
+- Auth/session-only methods need your own cookies/tokens. Do not commit secrets.
+- These clients are thin transport wrappers; normalize data in your application layer.
