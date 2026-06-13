@@ -1,0 +1,387 @@
+{
+  "client": "coinglass",
+  "title": "CoinGlass Reverse Client",
+  "base_url": "https://fapi.coinglass.com / https://capi.coinglass.com",
+  "auth": "browser headers",
+  "endpoints": [
+    [
+      "GET",
+      "/api/coin/search",
+      "search"
+    ],
+    [
+      "GET",
+      "/api/coin/v2/info",
+      "info"
+    ],
+    [
+      "GET",
+      "/api/coin/profile",
+      "profile"
+    ],
+    [
+      "GET",
+      "/api/coin/related",
+      "related"
+    ],
+    [
+      "GET",
+      "/api/coin/performance",
+      "performance"
+    ],
+    [
+      "GET",
+      "/api/coin/history",
+      "history"
+    ],
+    [
+      "GET",
+      "/api/moneyFlow/coin",
+      "money flow"
+    ],
+    [
+      "GET",
+      "/api/spot/coin/info",
+      "spot info"
+    ],
+    [
+      "GET",
+      "/api/spot/coin/symbol",
+      "spot symbol"
+    ],
+    [
+      "GET",
+      "/api/spot/coin/markets",
+      "spot markets"
+    ],
+    [
+      "GET",
+      "/api/spot/coin/outIn",
+      "spot out/in"
+    ],
+    [
+      "GET",
+      "/api/coin/vol/heatmap",
+      "volume heatmap"
+    ],
+    [
+      "GET",
+      "/api/futures/select/coins/tickers",
+      "futures tickers"
+    ],
+    [
+      "GET",
+      "/api/futures/top/coins/tickers",
+      "top futures tickers"
+    ],
+    [
+      "GET",
+      "/api/futures/flow/table",
+      "futures flow table"
+    ],
+    [
+      "GET",
+      "/api/futures/flow/category",
+      "futures flow category"
+    ],
+    [
+      "GET",
+      "/api/fundingRate/coin/detail",
+      "funding detail"
+    ],
+    [
+      "GET",
+      "/api/openInterest/info",
+      "open interest"
+    ],
+    [
+      "GET",
+      "/api/futures/liquidation/chart",
+      "liquidation chart"
+    ],
+    [
+      "GET",
+      "/api/coin/liquidation",
+      "coin liquidation"
+    ],
+    [
+      "GET",
+      "/api/futures/liquidation/today",
+      "liquidation today"
+    ],
+    [
+      "GET",
+      "/api/price",
+      "price"
+    ],
+    [
+      "GET",
+      "/api/priceAndIndicator",
+      "price and indicator"
+    ],
+    [
+      "GET",
+      "/api/support/symbol",
+      "support symbol"
+    ],
+    [
+      "GET",
+      "/api/v2/support/symbol",
+      "support symbol v2"
+    ],
+    [
+      "GET",
+      "/api/coin/tickers",
+      "coin tickers"
+    ],
+    [
+      "GET",
+      "/api/coin/market",
+      "coin market"
+    ]
+  ],
+  "browser_capture": {
+    "coinglass_btc": [
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/coin-community/api/alarm/msg",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/api/futures/home/statistics",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/coin-community/api/userapi/info",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/api/ip/country",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://fapi.coinglass.com/api/coin/v2/info?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://fapi.coinglass.com/api/coin/history?symbol=BTC&range=1d",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://fapi.coinglass.com/api/coin/vol/heatmap?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://fapi.coinglass.com/api/moneyFlow/coin?symbol=BTC&type=FUTURES",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://fapi.coinglass.com/api/moneyFlow/coin?symbol=BTC&type=FUTURES",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/coin-community/api/alarm/msg",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/api/futures/home/statistics",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/coin-community/api/userapi/info",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/api/ip/country",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/coin/v2/info?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/coin/history?symbol=BTC&range=1d",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/coin/vol/heatmap?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/moneyFlow/coin?symbol=BTC&type=FUTURES",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/moneyFlow/coin?symbol=BTC&type=FUTURES",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/moneyFlow/coin?symbol=BTC&type=SPOT",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/api/priceAndIndicator?symbol=BTC&interval=h8&index=avg_fr_kline&limit=3000",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/coin/related?type=coin",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/api/strapi/page?slug=currencies-BTC&lang=en",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/api/support/symbol",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/api/v2/support/symbol",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/api/coin/tickers?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/coin/performance?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/api/coin/market?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://capi.coinglass.com/api/coin/liquidation?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://fapi.coinglass.com/api/moneyFlow/coin?symbol=BTC&type=SPOT",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/api/priceAndIndicator?symbol=BTC&interval=h8&index=avg_fr_kline&limit=3000",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://fapi.coinglass.com/api/coin/related?type=coin",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/api/support/symbol",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/api/v2/support/symbol",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/api/coin/tickers?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://fapi.coinglass.com/api/coin/performance?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/api/coin/market?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "OPTIONS",
+        "status": 204,
+        "url": "https://capi.coinglass.com/api/coin/liquidation?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "POST",
+        "status": 202,
+        "url": "https://plausible.coinglass.com/api/event",
+        "postData": "{\"n\":\"pageview\",\"u\":\"https://www.coinglass.com/currencies/BTC\",\"d\":\"coinglass.com\",\"r\":null,\"w\":800}"
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/coin/v2/info?symbol=BTC",
+        "postData": ""
+      },
+      {
+        "method": "GET",
+        "status": 200,
+        "url": "https://fapi.coinglass.com/api/coin/v2/info?symbol=BTC",
+        "postData": ""
+      }
+    ]
+  }
+}

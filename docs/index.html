@@ -1,0 +1,29 @@
+        <!doctype html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>CoinGlass Reverse Client</title>
+          <style>
+            body { margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; color:#111; background:#f6f7f9; }
+            main { max-width:960px; margin:0 auto; padding:48px 20px; }
+            h1 { font-size:42px; margin:0 0 12px; letter-spacing:0; }
+            .panel { background:white; border:1px solid #dde1e7; border-radius:8px; padding:20px; margin:18px 0; }
+            code, pre { background:#111820; color:#e8f2ff; border-radius:6px; }
+            code { padding:2px 5px; }
+            pre { padding:16px; overflow:auto; }
+            ul { columns:2; padding-left:20px; }
+            a { color:#0756d6; }
+            @media (max-width:720px) { ul { columns:1; } h1 { font-size:32px; } }
+          </style>
+        </head>
+        <body><main>
+          <h1>CoinGlass Reverse Client</h1>
+          <p>Standalone Python client for browser-backed crypto market endpoints.</p>
+          <div class="panel"><h2>Install</h2><pre>pip install git+https://github.com/bigidulka/dex-client-coinglass.git</pre></div>
+          <div class="panel"><h2>Usage</h2><pre>from dex_client_coinglass import CoinGlassClient
+
+client = CoinGlassClient()</pre></div>
+          <div class="panel"><h2>Methods</h2><ul><li><code>search</code></li><li><code>info</code></li><li><code>profile</code></li><li><code>related</code></li><li><code>performance</code></li><li><code>history</code></li><li><code>money_flow</code></li><li><code>volume_heatmap</code></li><li><code>funding_detail</code></li><li><code>open_interest</code></li><li><code>liquidation_chart</code></li><li><code>coin_liquidation</code></li><li><code>liquidation_today</code></li><li><code>spot_info</code></li><li><code>spot_symbol</code></li><li><code>spot_markets</code></li><li><code>spot_out_in</code></li><li><code>futures_tickers</code></li><li><code>futures_top_tickers</code></li><li><code>futures_flow_table</code></li><li><code>futures_flow_category</code></li><li><code>price</code></li><li><code>price_and_indicator</code></li><li><code>support_symbol</code></li><li><code>support_symbol_v2</code></li><li><code>coin_tickers</code></li><li><code>coin_market</code></li><li><code>futures_home_statistics</code></li><li><code>ip_country</code></li></ul></div>
+          <div class="panel"><h2>Inventory</h2><p>See <a href="../endpoint_inventory.json">endpoint_inventory.json</a>.</p></div>
+        </main></body></html>
